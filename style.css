@@ -1,20 +1,21 @@
-:root{
+:root {
     --color-white: #ffff;
     --color-gray: #f0f2f5;
     --color-gray2: #dddfe2;
-    --color-drak: #1d2129; 
-    --color-blue: #1b74e4; 
-    --color-blue2: #166fe5 ;
+    --color-drak: #1d2129;
+    --color-blue: #1b74e4;
+    --color-blue2: #166fe5;
     --color-green: #42b72a;
     --color-green2: #36a420;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-gray);
     display: flex;
@@ -23,19 +24,20 @@ body{
     min-height: 100vh;
 }
 
-.content{
+.content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 70vw;
+    max-width: 1100px;
+    width: 100%;
 }
 
-.content-info{
+.content-info {
     width: 600px;
 }
 
-.content-login{
+.content-login {
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -43,7 +45,7 @@ body{
     gap: 1rem;
 }
 
-.content-login-box{
+.content-login-box {
     background-color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -55,7 +57,7 @@ body{
     box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px, rgb(0 0 0 / 10%) 0px 8px 16px;
 }
 
-.inputs{
+.inputs {
     padding: 15px;
     height: 22px;
     border-radius: 6px;
@@ -66,12 +68,12 @@ body{
     color: var(--color-drak);
 }
 
-.inputs:focus{
+.inputs:focus {
     border-color: var(--color-blue);
     box-shadow: 0 0 0 2px var(--color-gray2);
 }
 
-.btn{
+.btn {
     padding: 15px;
     border: none;
     color: var(--color-white);
@@ -82,48 +84,48 @@ body{
     cursor: pointer;
 }
 
-a{
+a {
     color: var(--color-blue);
     text-decoration: none;
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-hr{
+hr {
     width: 100%;
     border: .1px solid var(--color-gray);
 }
 
-p{
+p {
     text-align: center;
 }
 
-.btn-enter{
+.btn-enter {
     background-color: var(--color-blue);
 }
 
-.btn-enter:hover{
-background-color: var(--color-blue2);
+.btn-enter:hover {
+    background-color: var(--color-blue2);
 }
 
-.btn-create-account{
+.btn-create-account {
     background-color: var(--color-green);
     width: auto;
 }
 
-.btn-create-account:hover{
+.btn-create-account:hover {
     background-color: var(--color-green2);
 }
 
-h1{
+h1 {
     color: var(--color-blue);
     font-size: 4rem;
 }
 
-h3{
+h3 {
     font-size: 2rem;
     font-weight: 500;
 }
